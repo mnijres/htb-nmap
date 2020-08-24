@@ -1,4 +1,4 @@
-# 2020
+
 An automated nmap scan i use in HTB 
 
 First scan top 100 ports fast scan
