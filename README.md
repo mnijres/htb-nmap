@@ -11,3 +11,11 @@ Ths OS that running on the box and few more.
 Thank you for using this script.
 
 Feel free to change and edit your own techniques to the script.
+
+----------------------------
+
+Run the script:
+
+1-sudo chmod +x htb-nmap.sh   #Just for first time 
+
+2- ./htb-nmap.sh target
