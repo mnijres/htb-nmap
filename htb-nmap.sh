@@ -13,9 +13,9 @@ sudo nmap -sC -sV -Pn -oA $1-top100 --min-rate 2 --max-rate 100 --top-ports 100 
 sudo nmap -Pn -p- -vv -oA $1-all-ports $1
 
 #clean the results and get only open ports numbers 
-grep open $1-all-ports.nmap | sed 's/\// /g' |cut -d " " -f 1 > $1.final
+grep open $1-all-ports.nmap | sed 's/\// /g' |cut -d " " -f 1 > $1.clean
 
-sed -z 's/\n/,/g'  $1.all| sed 's/$/here/g'| sed 's/\,here//g' | rev  | cut -f2- |rev > $1-ports
+sed -z 's/\n/,/g'  $1.clean| sed 's/$/here/g'| sed 's/\,here//g' | rev  | cut -f2- |rev > $1-ports
 
 
 #Final nmap scan 
