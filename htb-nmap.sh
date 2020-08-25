@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Create directory for nmap files
+#Create directory for target nmap scan files
 
 mkdir nmap-$1
 cd nmap-$1
